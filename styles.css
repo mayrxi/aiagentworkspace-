@@ -1,0 +1,19 @@
+
+body { font-family: Arial, sans-serif; margin:0; background:#f7f8fb; color:#111;}
+.app { display:flex; height:100vh; }
+.sidebar { width:260px; background:#fff; padding:20px; border-right:1px solid #e6e9ef; }
+.sidebar h2{ margin-top:0;}
+.agent { list-style:none; padding:10px 0; display:flex; justify-content:space-between; align-items:center; }
+.badge { background:#e6e9ef; padding:4px 8px; border-radius:12px; font-size:12px; }
+#addAgentBtn { margin-top:20px; padding:10px; width:100%; }
+.main { flex:1; padding:20px; display:flex; flex-direction:column; }
+.topbar { display:flex; justify-content:space-between; align-items:center; }
+.feed { margin-top:20px; background:#fff; padding:20px; border-radius:8px; height:70vh; overflow:auto; box-shadow:0 1px 3px rgba(0,0,0,0.04); }
+.feed-item { padding:10px 0; border-bottom:1px solid #f0f0f0; }
+.modal { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.4); }
+.modal.hidden { display:none; }
+.modal-content{ background:#fff; padding:20px; width:420px; border-radius:8px; }
+.modal-actions { display:flex; justify-content:flex-end; gap:10px; margin-top:10px; }
+input, textarea, select { width:100%; padding:8px; margin-top:6px; border:1px solid #e6e9ef; border-radius:6px; }
+button { padding:8px 12px; border:none; background:#2563eb; color:white; border-radius:6px; cursor:pointer; }
+button.secondary { background:#e6e9ef; color:#111; }

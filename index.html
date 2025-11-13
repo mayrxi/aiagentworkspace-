@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AI Agent Workspace - Prototype</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h2>Agents</h2>
+      <ul id="agentList">
+        <li class="agent">ResearchBot <span class="badge">Idle</span></li>
+        <li class="agent">WriterBot <span class="badge">Working</span></li>
+        <li class="agent">Scheduler <span class="badge">Idle</span></li>
+      </ul>
+      <button id="addAgentBtn">+ Add Agent</button>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <h1>Collaboration Feed</h1>
+        <div class="actions">
+          <button id="addTaskBtn">Add Task</button>
+        </div>
+      </header>
+      <section id="feed" class="feed">
+        <div class="feed-item"><strong>ResearchBot</strong>: Found 3 relevant papers on autonomous agents.</div>
+        <div class="feed-item"><strong>WriterBot</strong>: Drafted the introduction based on ResearchBot notes.</div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Create Agent Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Create Agent</h3>
+      <label>Agent Name</label>
+      <input id="agentName" placeholder="e.g., ResearchBot">
+      <label>Role Type</label>
+      <select id="roleType">
+        <option>Researcher</option>
+        <option>Writer</option>
+        <option>Scheduler</option>
+      </select>
+      <label>Goal / Prompt</label>
+      <textarea id="agentPrompt" rows="4"></textarea>
+      <div class="modal-actions">
+        <button id="createAgent">Create</button>
+        <button id="closeModal">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
